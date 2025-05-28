@@ -173,20 +173,62 @@
   .absolute {
     position: absolute;
   }
+  .relative {
+    position: relative;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
+  .top-\[10px\] {
+    top: 10px;
   }
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
+  .top-\[100px\] {
+    top: 100px;
   }
-  .bottom-100 {
-    bottom: calc(var(--spacing) * 100);
+  .top-\[155px\] {
+    top: 155px;
   }
-  .bottom-\[50\%\] {
-    bottom: 50%;
+  .top-\[200px\] {
+    top: 200px;
+  }
+  .top-\[250px\] {
+    top: 250px;
+  }
+  .top-\[260px\] {
+    top: 260px;
+  }
+  .top-\[270px\] {
+    top: 270px;
+  }
+  .top-\[300px\] {
+    top: 300px;
+  }
+  .top-\[400px\] {
+    top: 400px;
+  }
+  .right-1 {
+    right: calc(var(--spacing) * 1);
+  }
+  .right-1\/2 {
+    right: calc(1/2 * 100%);
+  }
+  .right-\[40\%\] {
+    right: 40%;
+  }
+  .right-\[50\%\] {
+    right: 50%;
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .left-\[40\%\] {
+    left: 40%;
+  }
+  .left-\[50\%\] {
+    left: 50%;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -200,9 +242,6 @@
   .mt-\[20px\] {
     margin-top: 20px;
   }
-  .mt-\[30px\] {
-    margin-top: 30px;
-  }
   .mt-\[50px\] {
     margin-top: 50px;
   }
@@ -215,8 +254,8 @@
   .mt-\[200px\] {
     margin-top: 200px;
   }
-  .mt-\[500px\] {
-    margin-top: 500px;
+  .mt-\[215px\] {
+    margin-top: 215px;
   }
   .ml-\[10px\] {
     margin-left: 10px;
@@ -242,20 +281,34 @@
   .h-\[450px\] {
     height: 450px;
   }
-  .h-\[600px\] {
-    height: 600px;
-  }
   .w-\[40px\] {
     width: 40px;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[205px\] {
+    width: 205px;
   }
   .w-full {
     width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -349,8 +402,8 @@
   .text-\[20px\] {
     font-size: 20px;
   }
-  .text-\[30px\] {
-    font-size: 30px;
+  .text-\[25px\] {
+    font-size: 25px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -397,6 +450,21 @@
       background-color: var(--color-blue-950);
     }
   }
+  .sm\:top-\[230px\] {
+    @media (width >= 40rem) {
+      top: 230px;
+    }
+  }
+  .sm\:top-\[240px\] {
+    @media (width >= 40rem) {
+      top: 240px;
+    }
+  }
+  .sm\:mt-\[50px\] {
+    @media (width >= 40rem) {
+      margin-top: 50px;
+    }
+  }
   .sm\:ml-\[30\%\] {
     @media (width >= 40rem) {
       margin-left: 30%;
@@ -405,6 +473,31 @@
   .sm\:h-\[400px\] {
     @media (width >= 40rem) {
       height: 400px;
+    }
+  }
+  .sm\:w-\[300px\] {
+    @media (width >= 40rem) {
+      width: 300px;
+    }
+  }
+  .sm\:w-\[400px\] {
+    @media (width >= 40rem) {
+      width: 400px;
+    }
+  }
+  .sm\:w-\[455px\] {
+    @media (width >= 40rem) {
+      width: 455px;
+    }
+  }
+  .sm\:w-\[460px\] {
+    @media (width >= 40rem) {
+      width: 460px;
+    }
+  }
+  .sm\:w-\[470px\] {
+    @media (width >= 40rem) {
+      width: 470px;
     }
   }
   .sm\:w-\[480px\] {
@@ -427,14 +520,19 @@
       padding-inline: 15px;
     }
   }
-  .md\:text-\[18px\] {
-    @media (width >= 48rem) {
-      font-size: 18px;
-    }
-  }
   .md\:text-\[19px\] {
     @media (width >= 48rem) {
       font-size: 19px;
+    }
+  }
+  .md\:text-\[20px\] {
+    @media (width >= 48rem) {
+      font-size: 20px;
+    }
+  }
+  .lg\:top-\[200px\] {
+    @media (width >= 64rem) {
+      top: 200px;
     }
   }
   .lg\:ml-\[33\%\] {
@@ -460,6 +558,11 @@
   .lg\:h-\[550px\] {
     @media (width >= 64rem) {
       height: 550px;
+    }
+  }
+  .lg\:w-\[800px\] {
+    @media (width >= 64rem) {
+      width: 800px;
     }
   }
   .lg\:px-\[25px\] {
@@ -492,21 +595,6 @@
       opacity: 2%;
     }
   }
-  .lg\:opacity-\[5\%\] {
-    @media (width >= 64rem) {
-      opacity: 5%;
-    }
-  }
-  .lg\:opacity-\[10\%\] {
-    @media (width >= 64rem) {
-      opacity: 10%;
-    }
-  }
-  .lg\:opacity-\[20\%\] {
-    @media (width >= 64rem) {
-      opacity: 20%;
-    }
-  }
   .xl\:ml-\[37\%\] {
     @media (width >= 80rem) {
       margin-left: 37%;
@@ -537,21 +625,46 @@
       height: 430px;
     }
   }
-  .\32 xl\:h-\[450px\] {
-    @media (width >= 96rem) {
-      height: 450px;
-    }
-  }
-  .\32 xl\:h-\[480px\] {
-    @media (width >= 96rem) {
-      height: 480px;
-    }
-  }
   .\32 xl\:h-\[490px\] {
     @media (width >= 96rem) {
       height: 490px;
     }
   }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -574,6 +687,14 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
