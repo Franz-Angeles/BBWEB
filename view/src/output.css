@@ -227,6 +227,12 @@
   .mt-\[215px\] {
     margin-top: 215px;
   }
+  .mb-\[100px\] {
+    margin-bottom: 100px;
+  }
+  .mb-\[200px\] {
+    margin-bottom: 200px;
+  }
   .ml-\[10px\] {
     margin-left: 10px;
   }
@@ -259,6 +265,9 @@
   }
   .w-\[205px\] {
     width: 205px;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-\[800px\] {
     width: 800px;
@@ -447,6 +456,11 @@
       width: 2;
     }
   }
+  .sm\:w-\[200px\] {
+    @media (width >= 40rem) {
+      width: 200px;
+    }
+  }
   .sm\:w-\[205px\] {
     @media (width >= 40rem) {
       width: 205px;
@@ -462,6 +476,11 @@
       width: 300px;
     }
   }
+  .sm\:text-\[20px\] {
+    @media (width >= 40rem) {
+      font-size: 20px;
+    }
+  }
   .md\:top-\[278px\] {
     @media (width >= 48rem) {
       top: 278px;
@@ -475,6 +494,11 @@
   .md\:h-\[600px\] {
     @media (width >= 48rem) {
       height: 600px;
+    }
+  }
+  .md\:w-\[350px\] {
+    @media (width >= 48rem) {
+      width: 350px;
     }
   }
   .md\:px-\[15px\] {
@@ -530,6 +554,16 @@
   .lg\:w-\[243px\] {
     @media (width >= 64rem) {
       width: 243px;
+    }
+  }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
     }
   }
   .lg\:w-\[760px\] {
@@ -602,6 +636,21 @@
       width: 284px;
     }
   }
+  .xl\:w-\[350px\] {
+    @media (width >= 80rem) {
+      width: 350px;
+    }
+  }
+  .xl\:w-\[400px\] {
+    @media (width >= 80rem) {
+      width: 400px;
+    }
+  }
+  .xl\:w-\[500px\] {
+    @media (width >= 80rem) {
+      width: 500px;
+    }
+  }
   .xl\:gap-5 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 5);
@@ -610,6 +659,11 @@
   .xl\:px-\[40px\] {
     @media (width >= 80rem) {
       padding-inline: 40px;
+    }
+  }
+  .xl\:text-\[30px\] {
+    @media (width >= 80rem) {
+      font-size: 30px;
     }
   }
   .xl\:text-\[35px\] {
@@ -635,6 +689,21 @@
   .\32 xl\:w-\[324px\] {
     @media (width >= 96rem) {
       width: 324px;
+    }
+  }
+  .\32 xl\:w-\[700px\] {
+    @media (width >= 96rem) {
+      width: 700px;
+    }
+  }
+  .\32 xl\:w-\[800px\] {
+    @media (width >= 96rem) {
+      width: 800px;
+    }
+  }
+  .\32 xl\:w-\[1000px\] {
+    @media (width >= 96rem) {
+      width: 1000px;
     }
   }
   .\32 xl\:text-\[40px\] {
