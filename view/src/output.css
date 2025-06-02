@@ -267,6 +267,9 @@
   .h-\[450px\] {
     height: 450px;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .w-\[1px\] {
     width: 1px;
   }
@@ -341,9 +344,6 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -389,10 +389,6 @@
   }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
-  }
-  .to-blue-700 {
-    --tw-gradient-to: var(--color-blue-700);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -456,9 +452,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-blue-700 {
-    color: var(--color-blue-700);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -495,24 +488,10 @@
       }
     }
   }
-  .hover\:text-blue-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-blue-400);
-      }
-    }
-  }
   .hover\:text-blue-500 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-500);
-      }
-    }
-  }
-  .hover\:text-blue-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-blue-700);
       }
     }
   }
@@ -701,6 +680,21 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .xl\:m-\[20px\] {
+    @media (width >= 80rem) {
+      margin: 20px;
+    }
+  }
+  .xl\:mt-\[20px\] {
+    @media (width >= 80rem) {
+      margin-top: 20px;
+    }
+  }
+  .xl\:mt-\[30px\] {
+    @media (width >= 80rem) {
+      margin-top: 30px;
+    }
+  }
   .xl\:h-\[350px\] {
     @media (width >= 80rem) {
       height: 350px;
@@ -761,19 +755,19 @@
       top: 290px;
     }
   }
-  .\32 xl\:ml-\[13\%\] {
+  .\32 xl\:mt-\[20px\] {
     @media (width >= 96rem) {
-      margin-left: 13%;
+      margin-top: 20px;
+    }
+  }
+  .\32 xl\:mt-\[30px\] {
+    @media (width >= 96rem) {
+      margin-top: 30px;
     }
   }
   .\32 xl\:ml-\[14\%\] {
     @media (width >= 96rem) {
       margin-left: 14%;
-    }
-  }
-  .\32 xl\:ml-\[18\%\] {
-    @media (width >= 96rem) {
-      margin-left: 18%;
     }
   }
   .\32 xl\:h-\[400px\] {
@@ -815,11 +809,6 @@
     @media (width >= 96rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
-  .\32 xl\:text-\[15px\] {
-    @media (width >= 96rem) {
-      font-size: 15px;
     }
   }
   .\32 xl\:text-\[18px\] {
@@ -873,48 +862,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -940,15 +887,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
