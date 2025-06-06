@@ -14,6 +14,9 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-blue-950: oklch(28.2% 0.091 267.935);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -211,6 +214,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .mt-\[0px\] {
+    margin-top: 0px;
+  }
   .mt-\[10px\] {
     margin-top: 10px;
   }
@@ -234,6 +240,9 @@
   }
   .mt-\[215px\] {
     margin-top: 215px;
+  }
+  .mt-\[\\0px\] {
+    margin-top: \0px;
   }
   .mb-\[20px\] {
     margin-bottom: 20px;
@@ -262,6 +271,9 @@
   .h-\[275px\] {
     height: 275px;
   }
+  .h-\[295px\] {
+    height: 295px;
+  }
   .h-\[300px\] {
     height: 300px;
   }
@@ -276,6 +288,12 @@
   }
   .h-\[450px\] {
     height: 450px;
+  }
+  .h-\[700px\] {
+    height: 700px;
+  }
+  .h-\[750px\] {
+    height: 750px;
   }
   .h-\[800px\] {
     height: 800px;
@@ -300,6 +318,9 @@
   }
   .w-\[275px\] {
     width: 275px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[320px\] {
     width: 320px;
@@ -360,6 +381,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-items-center {
+    justify-items: center;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -381,8 +405,14 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-\[3px\] {
+    border-radius: 3px;
+  }
   .rounded-\[5px\] {
     border-radius: 5px;
+  }
+  .rounded-\[6px\] {
+    border-radius: 6px;
   }
   .rounded-\[100\%\] {
     border-radius: 100%;
@@ -422,6 +452,15 @@
   }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -493,6 +532,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-10 {
+    opacity: 10%;
   }
   .opacity-\[20\%\] {
     opacity: 20%;
@@ -593,6 +635,16 @@
       height: 600px;
     }
   }
+  .md\:w-\[300px\] {
+    @media (width >= 48rem) {
+      width: 300px;
+    }
+  }
+  .md\:w-\[350px\] {
+    @media (width >= 48rem) {
+      width: 350px;
+    }
+  }
   .md\:px-\[15px\] {
     @media (width >= 48rem) {
       padding-inline: 15px;
@@ -663,6 +715,21 @@
       width: 400px;
     }
   }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
+    }
+  }
+  .lg\:w-\[600px\] {
+    @media (width >= 64rem) {
+      width: 600px;
+    }
+  }
+  .lg\:w-\[700px\] {
+    @media (width >= 64rem) {
+      width: 700px;
+    }
+  }
   .lg\:w-\[760px\] {
     @media (width >= 64rem) {
       width: 760px;
@@ -728,9 +795,39 @@
       margin-top: 70px;
     }
   }
+  .xl\:h-\[300px\] {
+    @media (width >= 80rem) {
+      height: 300px;
+    }
+  }
+  .xl\:h-\[320px\] {
+    @media (width >= 80rem) {
+      height: 320px;
+    }
+  }
+  .xl\:h-\[340px\] {
+    @media (width >= 80rem) {
+      height: 340px;
+    }
+  }
   .xl\:h-\[350px\] {
     @media (width >= 80rem) {
       height: 350px;
+    }
+  }
+  .xl\:h-\[355px\] {
+    @media (width >= 80rem) {
+      height: 355px;
+    }
+  }
+  .xl\:h-\[365px\] {
+    @media (width >= 80rem) {
+      height: 365px;
+    }
+  }
+  .xl\:h-\[375px\] {
+    @media (width >= 80rem) {
+      height: 375px;
     }
   }
   .xl\:h-\[400px\] {
@@ -746,6 +843,21 @@
   .xl\:w-\[284px\] {
     @media (width >= 80rem) {
       width: 284px;
+    }
+  }
+  .xl\:w-\[355px\] {
+    @media (width >= 80rem) {
+      width: 355px;
+    }
+  }
+  .xl\:w-\[365px\] {
+    @media (width >= 80rem) {
+      width: 365px;
+    }
+  }
+  .xl\:w-\[375px\] {
+    @media (width >= 80rem) {
+      width: 375px;
     }
   }
   .xl\:w-\[400px\] {
@@ -771,6 +883,11 @@
   .xl\:text-\[15px\] {
     @media (width >= 80rem) {
       font-size: 15px;
+    }
+  }
+  .xl\:text-\[18px\] {
+    @media (width >= 80rem) {
+      font-size: 18px;
     }
   }
   .xl\:text-\[30px\] {

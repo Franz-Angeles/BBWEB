@@ -14,7 +14,7 @@ body {
 .marquee-content {
   display: flex;
   width: fit-content;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
   gap: 50px;
 }
 
@@ -30,11 +30,26 @@ body {
   flex-shrink: 0;
 }
 
+#bggray {
+  background-color: #0f35a7;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .movingicon {
+    height: 60px;
+  }
+  .marquee-content {
+    gap: 20px;
   }
 }
