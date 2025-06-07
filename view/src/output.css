@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -214,9 +212,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .mt-\[0px\] {
-    margin-top: 0px;
-  }
   .mt-\[10px\] {
     margin-top: 10px;
   }
@@ -241,9 +236,6 @@
   .mt-\[215px\] {
     margin-top: 215px;
   }
-  .mt-\[\\0px\] {
-    margin-top: \0px;
-  }
   .mb-\[20px\] {
     margin-bottom: 20px;
   }
@@ -265,12 +257,6 @@
   .h-\[40px\] {
     height: 40px;
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
-  .h-\[275px\] {
-    height: 275px;
-  }
   .h-\[295px\] {
     height: 295px;
   }
@@ -289,20 +275,26 @@
   .h-\[450px\] {
     height: 450px;
   }
-  .h-\[700px\] {
-    height: 700px;
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-\[750px\] {
     height: 750px;
   }
-  .h-\[800px\] {
-    height: 800px;
+  .h-full {
+    height: 100%;
   }
   .w-\[1px\] {
     width: 1px;
   }
   .w-\[40px\] {
     width: 40px;
+  }
+  .w-\[50px\] {
+    width: 50px;
+  }
+  .w-\[100px\] {
+    width: 100px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -334,9 +326,6 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -366,9 +355,6 @@
   .flex-row-reverse {
     flex-direction: row-reverse;
   }
-  .content-center {
-    align-content: center;
-  }
   .items-center {
     align-items: center;
   }
@@ -381,9 +367,6 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-items-center {
-    justify-items: center;
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -395,9 +378,6 @@
   }
   .gap-\[50px\] {
     gap: 50px;
-  }
-  .self-center {
-    align-self: center;
   }
   .justify-self-center {
     justify-self: center;
@@ -447,20 +427,14 @@
   .border-blue-900 {
     border-color: var(--color-blue-900);
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
-  }
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
-  }
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
-  }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -532,9 +506,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .opacity-10 {
-    opacity: 10%;
   }
   .opacity-\[20\%\] {
     opacity: 20%;
@@ -640,11 +611,6 @@
       width: 300px;
     }
   }
-  .md\:w-\[350px\] {
-    @media (width >= 48rem) {
-      width: 350px;
-    }
-  }
   .md\:px-\[15px\] {
     @media (width >= 48rem) {
       padding-inline: 15px;
@@ -713,16 +679,6 @@
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
-    }
-  }
-  .lg\:w-\[500px\] {
-    @media (width >= 64rem) {
-      width: 500px;
-    }
-  }
-  .lg\:w-\[600px\] {
-    @media (width >= 64rem) {
-      width: 600px;
     }
   }
   .lg\:w-\[700px\] {
@@ -795,16 +751,6 @@
       margin-top: 70px;
     }
   }
-  .xl\:h-\[300px\] {
-    @media (width >= 80rem) {
-      height: 300px;
-    }
-  }
-  .xl\:h-\[320px\] {
-    @media (width >= 80rem) {
-      height: 320px;
-    }
-  }
   .xl\:h-\[340px\] {
     @media (width >= 80rem) {
       height: 340px;
@@ -813,16 +759,6 @@
   .xl\:h-\[350px\] {
     @media (width >= 80rem) {
       height: 350px;
-    }
-  }
-  .xl\:h-\[355px\] {
-    @media (width >= 80rem) {
-      height: 355px;
-    }
-  }
-  .xl\:h-\[365px\] {
-    @media (width >= 80rem) {
-      height: 365px;
     }
   }
   .xl\:h-\[375px\] {
@@ -843,16 +779,6 @@
   .xl\:w-\[284px\] {
     @media (width >= 80rem) {
       width: 284px;
-    }
-  }
-  .xl\:w-\[355px\] {
-    @media (width >= 80rem) {
-      width: 355px;
-    }
-  }
-  .xl\:w-\[365px\] {
-    @media (width >= 80rem) {
-      width: 365px;
     }
   }
   .xl\:w-\[375px\] {
