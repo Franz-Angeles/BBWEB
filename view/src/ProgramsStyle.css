@@ -4,6 +4,11 @@
   margin-top: 5px;
   margin-right: 5px;
 }
+@media (min-width: 768px) {
+  .background {
+    margin-right: 0;
+  }
+}
 .icons {
   height: 40px;
   justify-self: center;
@@ -19,4 +24,15 @@
   padding: 10px;
   margin: 9px 8px 5px 5px;
   align-self: center;
+  border-radius: 4px;
+}
+.labels:hover {
+  background-color: #1447e6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.iconBg:hover {
+  background-color: #1447e6;
+  cursor: pointer;
+  transition: 0.2s;
 }
