@@ -1,9 +1,22 @@
 .background {
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: white;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .icons {
   height: 40px;
   justify-self: center;
-  margin: 6px 0 0 4px;
+  margin: 3px 0 0 4px;
+}
+#iconid {
+  margin: 4px 2px 0 0;
+}
+#wrkouticon {
+  height: 43px;
+}
+.labels {
+  padding: 10px;
+  margin: 9px 8px 5px 5px;
+  align-self: center;
 }
