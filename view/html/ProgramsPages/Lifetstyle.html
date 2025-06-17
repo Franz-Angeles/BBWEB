@@ -3,8 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="../src/output.css" rel="stylesheet" />
+    <title>Life Style</title>
+    <link href="../../src/output.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body class="bg-black text-white m-0 p-0 text-[13px]">
+    <!--NAV BAR -- --NAV BAR -- --NAV BAR -- --NAV BAR -- --NAV BAR -->
+    <nav class="relative border-b 1 white flex flex-row items-center p-[10px]">
+      <img
+        class="h-[40px] w-[40px] rounded-[100%]"
+        src="../../src/img/pisik1.jpg"
+      />
+      <div class="hidden sm:block">
+        <h1 class="text-[20px] ml-[10px] font-semibold">Life Style</h1>
+      </div>
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 transition-all duration-500"
+      >
+        <a href="../../html/index.html"
+          ><button
+            class="m-[5px 5px 5px 10px] bg-blue-700 px-[6px] rounded-[5px] py-[5px] md:px-[15px] lg:px-[25px] xl:px-[40px] transition-all duration-100 hover:bg-blue-900 cursor-pointer active:bg-blue-950"
+          >
+            Home
+          </button>
+        </a>
+        <a href="../../html/about.html"
+          ><button
+            class="m-[5px 10px 5px 10px] bg-blue-700 px-[6px] rounded-[5px] py-[5px] md:px-[15px] lg:px-[25px] xl:px-[40px] transition-all duration-100 hover:bg-blue-900 cursor-pointer active:bg-blue-950"
+          >
+            About
+          </button>
+        </a>
+        <a href="../../html/Programs.html"
+          ><button
+            class="m-[5px 10px 5px 10px] bg-blue-700 px-[7px] py-[5px] rounded-[5px] md:px-[15px] lg:px-[25px] xl:px-[40px] transition-all duration-100 hover:bg-blue-900 cursor-pointer active:bg-blue-950"
+          >
+            Programs
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!--HOVER BACK BUTTON-->  
+    <div
+      id="sidebar"
+      class="h-[905px]  w-[60px] xl:w-[350px] pl-[5px]"
+    >
+      <a href="../Programs.html">
+        <div class="flex flex-row">
+          <div
+            class="background bg-white border 1 border-white h-[40px] w-[40px] mt-[6px] rounded-4xl md:h-[50px] md:w-[50px]
+            hover:bg-blue-700"
+          >
+            <img class="icons" src="../../src/img/back-button.png" alt="" />
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </body>
 </html>
